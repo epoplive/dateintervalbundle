@@ -1,0 +1,5 @@
+services:
+    ogi_dateinterval.form.types.dateinterval:
+        class: Ogi\DateIntervalBundle\Form\Type\DateIntervalType
+        tags:
+            - { name: form.type, alias: ogi_dateinterval }

@@ -1,0 +1,36 @@
+{
+    "name": "ogizanagi/dateintervalbundle",
+    "description": "Provides additionnal features to handle DateIntervals, as a FormType or a Doctrine DBAL Type",
+    "keywords": [
+        "timespans",
+        "dateinterval",
+        "form",
+        "period"
+    ],
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Maxime Steinhausser",
+            "email": "maxime.steinhausser@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2",
+        "symfony/framework-bundle": "~2.3",
+        "symfony/form": "~2.3",
+        "doctrine/dbal": "~2.2,>=2.2.3",
+        "herrera-io/date-interval": "~1.0"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    },
+    "autoload": {
+        "psr-0": {
+            "Ogi\\DateIntervalBundle": ""
+        }
+    },
+    "target-dir": "Ogi/DateIntervalBundle"
+}
