@@ -125,3 +125,16 @@ public function buildForm(FormBuilderInterface $builder, array $options)
         ;
     }
 ```
+
+## Improvements
+
+This bundle isn't quite complete.
+The following improvements could be made:
+
+- The FormType sould allow to:
+    - Select a choice range for every picker (years, months, days, hours, seconds).
+    - For every picker, add an option to display it or not (years, months, days, hours, seconds).
+- A default & overridable view should be provided for the form type. (including, why not, a bootstrap 2 and 3 one)
+- The Doctrine DQL function from [herrera-io/php-doctrine-dateinterval](https://github.com/herrera-io/php-doctrine-dateinterval) should be included, but as the DBAL type, must remains loadable or not by the developer, through config.
+- Maybe the custom DBAL type should be prefixed by the `ogi_` namespace, to avoid conflicts.
+- Any other suggested improvements.
