@@ -38,7 +38,7 @@ class DateIntervalType extends BigIntType {
     public function convertToPHPValue($value, AbstractPlatform $platform)
     {
         if (null !== $value) {
-            if (false == preg_match('/^\d+$/', $value)) {
+            if (1 !== preg_match('/^\d+$/', $value)) {
                 throw ConversionException::conversionFailedFormat(
                     $value,
                     $this->getName(),
